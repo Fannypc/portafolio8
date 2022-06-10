@@ -1,0 +1,100 @@
+/* HOME */
+
+.home-icon {
+    width: 2rem;
+    height: 2rem;
+    border-radius: 50%;
+    background-color: orangered;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0.5rem;
+    margin: 1rem 0;
+}
+
+.home-icons-area {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+.home-container {
+    /* height: 36rem; */
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    grid-auto-rows: minmax(100px, auto);
+    grid-template-areas: 
+        "hd hd hd hd hd hd"
+        "icon img img img img img"
+        "icon img img img img img"
+        "icon img img img img img";
+    background-color: red;
+}
+
+.home-header {
+    grid-area: hd;
+    padding: 0 1rem;
+}
+
+.home-header h1 {
+    font-size: 3rem;
+}
+
+.home-icons-container {
+    grid-area: icon;
+}
+
+.home-img {
+    grid-area: img;
+    position: relative;
+    /* background-color: red; */
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    min-height: 20rem;
+    padding-left: 10%;
+}
+
+.home-img-container {
+    /* height: 10rem;
+    width: 10rem; */
+    /* background-color: red; */
+    position: absolute;
+    left: 0
+}
+
+.home-img-container img {
+    max-width: 100%;
+    width: 13rem;
+    height: 19rem;
+}
+
+.home-green-circle {
+    /* position: absolute; */
+    /* left: 0;
+    top: 0; */
+    /* width: 50%;
+    height: 50%; */
+    width: 16rem;
+    height: 16rem;
+    border-radius: 50%;
+    background-color: green;
+    /* margin: auto; */
+    /* left: 3rem; */
+}
+
+/* // Small devices (landscape phones, 576px and up) */
+@media (min-width: 576px) { }
+
+/* // Medium devices (tablets, 768px and up) */
+@media (min-width: 768px) {
+}
+
+/* // Large devices (desktops, 992px and up) */
+@media (min-width: 992px) {
+
+}
+
+/* // Extra large devices (large desktops, 1200px and up) */
+@media (min-width: 1200px) {
+}
